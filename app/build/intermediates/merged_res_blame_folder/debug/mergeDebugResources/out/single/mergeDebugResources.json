@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/layout_activity_show_text.xml.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/layout/activity_show_text.xml"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-debug-4:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/mipmap-hdpi/ic_launcher_round.png"
+    }
+]

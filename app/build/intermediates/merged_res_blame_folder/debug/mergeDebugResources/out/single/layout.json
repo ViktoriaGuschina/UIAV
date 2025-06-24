@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "ru.netology.testing.uiautomator.app-mergeDebugResources-3:/layout/activity_show_text.xml",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/layout/activity_show_text.xml"
+    },
+    {
+        "merged": "ru.netology.testing.uiautomator.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "ru.netology.testing.uiautomator.app-main-6:/layout/activity_main.xml"
+    }
+]

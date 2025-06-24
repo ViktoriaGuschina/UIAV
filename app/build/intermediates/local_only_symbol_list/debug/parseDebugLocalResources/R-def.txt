@@ -1,0 +1,21 @@
+R_DEF: Internal format may change without notice
+local
+color ic_launcher_background
+dimen activity_horizontal_margin
+dimen header_margin
+drawable ic_launcher_foreground
+id buttonActivity
+id buttonChange
+id text
+id textToBeChanged
+id userInput
+layout activity_main
+layout activity_show_text
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string change_text
+string hello_world
+string open_activity_and_change_text
+string type_something
+style AppTheme
