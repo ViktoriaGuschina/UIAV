@@ -70,22 +70,25 @@ class ChangeTextTest {
         val appPackageName = MODEL_PACKAGE
         waitForPackage(appPackageName)
 
-        // Получаем текущее значение текста перед изменением
-        val initialText = device.findObject(By.res(appPackageName, "textToBeChanged")).text
+        val textView = device.findObject(By.res(appPackageName, "textToBeChanged"))
+            ?: throw AssertionError("Элемент 'textToBeChanged' не найден")
+        val initialText = textView.text
 
-        // Очищаем ввод пользователя (устанавливаем пустую строку)
         val userInputField = device.findObject(By.res(appPackageName, "userInput"))
-        userInputField.text = " " // Установим пробел, так как пустую строку не получится установить
-
-        // Нажимаем на кнопку изменения текста
+            ?: throw AssertionError("Элемент 'userInput' не найден")
         val changeButton = device.findObject(By.res(appPackageName, "buttonChange"))
+            ?: throw AssertionError("Элемент 'buttonChange' не найден")
+
+        userInputField.text = " "
+
         changeButton.click()
+        device.waitForIdle()
 
-        // Получаем значение текста после попытки изменения
-        val resultText = device.findObject(By.res(appPackageName, "textToBeChanged")).text
+        val resultTextView = device.findObject(By.res(appPackageName, "textToBeChanged"))
+            ?: throw AssertionError("Элемент 'textToBeChanged' не найден после изменения")
+        val resultText = resultTextView.text
 
-        // Проверяем, что текст не изменился
-        assertEquals(resultText, initialText)
+        assertEquals(initialText, resultText)
     }
 
     @Test
@@ -93,21 +96,22 @@ class ChangeTextTest {
         val appPackageName = MODEL_PACKAGE
         waitForPackage(appPackageName)
 
-        // Устанавливаем текст в поле ввода
         val userInputField = device.findObject(By.res(appPackageName, "userInput"))
+            ?: throw AssertionError("Элемент 'userInput' не найден")
+        val openActivityButton = device.findObject(By.res(appPackageName, "buttonActivity"))
+            ?: throw AssertionError("Элемент 'buttonActivity' не найден")
+
         userInputField.text = textToSet
 
-        // Нажимаем на кнопку для открытия новой активити
-        val openActivityButton = device.findObject(By.res(appPackageName, "buttonActivity"))
         openActivityButton.click()
 
-        // Ждем загрузки новой активити
         waitForPackage(appPackageName)
 
-        // Получаем текст из новой активити
-        val displayedText = device.findObject(By.res(appPackageName, "text")).text
+        val displayedTextObj = device.findObject(By.res(appPackageName, "text"))
+            ?: throw AssertionError("Элемент 'text' на новой активности не найден")
 
-        // Проверяем, что текст соответствует введенному значению
-        assertEquals(displayedText, textToSet)
+        val displayedText = displayedTextObj.text
+
+        assertEquals(textToSet, displayedText)
     }
 }
