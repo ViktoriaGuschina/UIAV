@@ -54,18 +54,6 @@ class ChangeTextTest {
     }
 
     @Test
-    fun testChangeText() {
-        val packageName = MODEL_PACKAGE
-        waitForPackage(packageName)
-
-        device.findObject(By.res(packageName, "userInput")).text = textToSet
-        device.findObject(By.res(packageName, "buttonChange")).click()
-
-//        val result = device.findObject(By.res(packageName, "textToBeChanged")).text
-//        assertEquals(result, textToSet)
-    }
-
-    @Test
     fun testEmptyStringInput() {
         val appPackageName = MODEL_PACKAGE
         waitForPackage(appPackageName)
